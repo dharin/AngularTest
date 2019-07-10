@@ -1,0 +1,25 @@
+<div *ngIf="userForm" class="offset-md-2 col-md-8 mb-3">
+    <div class="card-header">
+        <div class="card-header bg-dark text-white"><strong>User Detail Form</strong></div>
+        <div class="card-body">
+            <form [formGroup]="userForm" class="">
+                <div class="row">
+                    <div class="col-md-2">Name:</div>
+                    <div class="col-md-10"><input type="text" class="form-control" formControlName="name"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-2">User Name:</div>
+                    <div class="col-md-10"><input type="text" class="form-control" formControlName="username"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-2">Street:</div>
+                    <div class="col-md-10"><input type="text" class="form-control" formControlName="street"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-2">City:</div>
+                    <div class="col-md-10"><input type="text" class="form-control" formControlName="city"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

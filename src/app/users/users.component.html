@@ -1,0 +1,6 @@
+<div class="users-list-container">
+    <app-users-listing [users]="users" (userDetail)="getUserDetail($event)"></app-users-listing>
+</div>
+<div class="mt-5">
+    <app-users-details-form [userDetail]='selectUser'></app-users-details-form>
+</div>

@@ -1,0 +1,19 @@
+<div class="offset-md-2 col-md-8 mt-3">
+    <h3>Users</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users" (click)="selectUser(user)" class="user-info" [ngClass]="{'bg-color': selectedUser && selectedUser.email == user.email }">
+                <td class="user-name">{{user.name}}</td>
+                <td class="user-username">{{user.username}}</td>
+                <td class="user-email">{{user.email}}</td>
+            </tr>
+        </tbody>
+    </table> 
+</div>
